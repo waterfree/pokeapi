@@ -10,7 +10,7 @@ export async function buscarPokemon(url) {
     let data = await fetch(urlParaBuscar)
     let dataParseada = await data.json() //{}results
 
-    console.log(dataParseada.results)
+    console.log("Esta es la data parseada: ",dataParseada)
     //return dataParseada.results //[{url,name},{},{}]
     let arrayDePokemones = []
     for (let i = 0; i < dataParseada.results.length; i++) {
@@ -28,7 +28,7 @@ export async function buscarPokemon(url) {
             tipos: pokemonParseado.types,//[]
             imagen: pokemonParseado.sprites.other.dream_world.front_default//string
         }
-        //console.log(pokemonFormateado)
+        console.log("este es el link:",pokemonFormateado)
         arrayDePokemones.push(pokemonFormateado)
     }
     return {

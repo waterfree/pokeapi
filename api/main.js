@@ -1,7 +1,5 @@
 //asi se conectan 2 js
-import { buscarPokemon, 
-    buscarPokemonPorNombre 
-} from "./controllers/controllers.js"
+import { buscarPokemon, buscarPokemonPorNombre } from "./controllers/controllers.js"
 let root = document.getElementById("root")
 //buscarPokemon()
 //saludar()
